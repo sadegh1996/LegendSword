@@ -13,7 +13,7 @@ local function run(msg, matches)
     local chat = get_receiver(msg)
     local user = "user#id"..msg.from.id
     if lock_tag == "yes" then
-        send_large_msg(chat, 'شما تگ فرستادید و این در گروه ممنوع است\nشما اخراج می شوید')
+        send_large_msg(chat, 'به دلیل موارد امنیتی از گروه سیتکیر میشوید\nبای')
         chat_del_user(chat, user, ok_cb, true)
     end
 end
@@ -21,7 +21,15 @@ end
 return {
   patterns = {
     "#(.*)",
-    "@(.*)"
+    "xy(.*)",
+    "yx(.*)",
+    "XY(.*)",
+    "Xy(.*)",
+    "ایکس ایگرگ(.*)",
+    "ایگرگ(.*)",
+    "ایکس(.*)",
+    "/start(.*)",
+    "z(.*)"
   },
   run = run
 }
