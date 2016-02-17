@@ -60,7 +60,7 @@ local function check_member_realm_add(cb_extra, success, result)
           lock_english = 'no',
           lock_chat = 'no',
           lock_join = 'no',
-          antitag = 'no',
+          antitag = 'yes',
           lock_ads = 'no',
           antifosh = 'no',
           flood = 'yes',
@@ -101,7 +101,7 @@ function check_member_group(cb_extra, success, result)
           lock_english = 'no',
           lock_chat = 'no',
           lock_join = 'no',
-          antitag = 'no',
+          antitag = 'yes',
           lock_ads = 'no',
           antifosh = 'no',
           flood = 'yes',
@@ -142,7 +142,7 @@ local function check_member_modadd(cb_extra, success, result)
           lock_english = 'no',
           lock_chat = 'no',
           lock_join = 'no',
-          antitag = 'no',
+          antitag = 'yes',
           lock_ads = 'no',
           antifosh = 'no',
           flood = 'yes',
@@ -1301,14 +1301,14 @@ local function run(msg, matches)
 
     if matches[1] == 'newlink' and not is_realm(msg) then
       if not is_momod(msg) then
-        return "For moderators only!"
+        return "مجاز برای مدیران"
       end
       local function callback (extra , success, result)
         local receiver = 'chat#'..msg.to.id
         if success == 0 then
            return send_large_msg(receiver, '*Error: Invite link failed* \nReason: Not creator.')
         end
-        send_large_msg(receiver, "Created a new link")
+        send_large_msg(receiver, "لینک جدید ایجاد شد")
         data[tostring(msg.to.id)]['settings']['set_link'] = result
         save_data(_config.moderation.data, data)
       end
