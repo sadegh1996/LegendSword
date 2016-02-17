@@ -240,7 +240,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text = "Group settings:\n•)Lock group name: "..settings.lock_name.."\nE••)Lockmember picture : "..settings.lock_photo.."\nS•••)Lock new group member : "..settings.lock_member.."\nE••••)Lock group leave ban : "..leave_ban.."\nT•••••)lock chat : "..settings.lock_arabic.."\nN••••••)lock english : "..settings.lock_english.."\nO•••••••)lock chat : "..settings.lock_chat.."\nD••••••)lock join with link : "..settings.lock_join.."\n32•••••)lock xy security : "..settings.antitag.."\nB••••)lock advertising : "..settings.lock_ads.."\nO•••)lock abuse : "..settings.antifosh.."\nT••)flood set on : "..NUM_MSG_MAX.."\n•)Bot can come: "..bots_protection.."\nNod32 (͡° ͜ʖ ͡°) :7.1\n\n@Nod32team"
+  local text = "Group settings:\n••••Lock group name: "..settings.lock_name.."\n••••Lockmember picture : "..settings.lock_photo.."\n••••Lock new group member : "..settings.lock_member.."\n••••Lock group leave ban : "..leave_ban.."\n••••lock chat : "..settings.lock_arabic.."\n••••lock english : "..settings.lock_english.."\n••••lock chat : "..settings.lock_chat.."\n••••lock join with link : "..settings.lock_join.."\n••••lock xy security : "..settings.antitag.."\n••••lock advertising : "..settings.lock_ads.."\n••••lock abuse : "..settings.antifosh.."\n••••flood set on : "..NUM_MSG_MAX.."\n••••Bot can come: "..bots_protection.."\nNod32 (͡° ͜ʖ ͡°) :7.1\n@Nod32team"
   return text
 end
 
