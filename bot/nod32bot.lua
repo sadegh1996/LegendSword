@@ -228,7 +228,7 @@ function create_config( )
     "all",
     "leave_ban",
     "bot_manager",
-    "lock_ads",
+    "anti_ads",
     "linkpv",
     "boobs",
     "time",
