@@ -1189,8 +1189,8 @@ local function run(msg, matches)
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked flood ")
         return lock_group_floodmod(msg, data, target)
       end
-      if matches[2] == 'arabic' then
-        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked arabic ")
+      if matches[2] == 'xy' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] locked xy ")
         return lock_group_arabic(msg, data, target)
       end
       if matches[2] == 'bots' then
@@ -1244,8 +1244,8 @@ local function run(msg, matches)
         savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked flood ")
         return unlock_group_floodmod(msg, data, target)
       end
-      if matches[2] == 'arabic' then
-        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked arabic ")
+      if matches[2] == 'xy' then
+        savelog(msg.to.id, name_log.." ["..msg.from.id.."] unlocked xy ")
         return unlock_group_arabic(msg, data, target)
       end
       if matches[2] == 'bots' then
