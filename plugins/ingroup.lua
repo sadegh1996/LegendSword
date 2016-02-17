@@ -14,7 +14,7 @@ local function check_member_autorealm(cb_extra, success, result)
         settings = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
           lock_name = 'yes',
-          lock_photo = 'no',
+          lock_photo = 'yes',
           lock_member = 'no',
           leave_ban = 'no',
           lock_arabic = 'no',
@@ -25,7 +25,7 @@ local function check_member_autorealm(cb_extra, success, result)
           lock_ads = 'no',
           antifosh = 'no',
           flood = 'yes',
-          bots_protection = 'no'
+          bots_protection = 'yes'
         }
       }
       save_data(_config.moderation.data, data)
@@ -53,7 +53,7 @@ local function check_member_realm_add(cb_extra, success, result)
         settings = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
           lock_name = 'yes',
-          lock_photo = 'no',
+          lock_photo = 'yes',
           lock_member = 'no',
           leave_ban = 'no',
           lock_arabic = 'no',
@@ -64,7 +64,7 @@ local function check_member_realm_add(cb_extra, success, result)
           lock_ads = 'no',
           antifosh = 'no',
           flood = 'yes',
-          bots_protection = 'no'
+          bots_protection = 'yes'
         }
       }
       save_data(_config.moderation.data, data)
@@ -94,7 +94,7 @@ function check_member_group(cb_extra, success, result)
         settings = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
           lock_name = 'yes',
-          lock_photo = 'no',
+          lock_photo = 'yes',
           lock_member = 'no',
           leave_ban = 'no',
           lock_arabic = 'no',
@@ -105,7 +105,7 @@ function check_member_group(cb_extra, success, result)
           lock_ads = 'no',
           antifosh = 'no',
           flood = 'yes',
-          bots_protection = 'no'
+          bots_protection = 'yes'
         }
       }
       save_data(_config.moderation.data, data)
@@ -135,7 +135,7 @@ local function check_member_modadd(cb_extra, success, result)
         settings = {
           set_name = string.gsub(msg.to.print_name, '_', ' '),
           lock_name = 'yes',
-          lock_photo = 'no',
+          lock_photo = 'yes',
           lock_member = 'no',
           leave_ban = 'no',
           lock_arabic = 'no',
@@ -146,7 +146,7 @@ local function check_member_modadd(cb_extra, success, result)
           lock_ads = 'no',
           antifosh = 'no',
           flood = 'yes',
-          bots_protection = 'no'
+          bots_protection = 'yes'
         }
       }
       save_data(_config.moderation.data, data)
@@ -240,7 +240,7 @@ local function show_group_settingsmod(msg, data, target)
     	leave_ban = data[tostring(msg.to.id)]['settings']['leave_ban']
    	end
   local settings = data[tostring(target)]['settings']
-  local text = "Group settings:\nLock group name✏ : "..settings.lock_name.."\nLockmember photo🌁 : "..settings.lock_photo.."\nLock group member👤 : "..settings.lock_member.."\nLock group leave📤 : "..leave_ban.."\nlock arabic🇸🇦 : "..settings.lock_arabic.."\nlock english🔠 : "..settings.lock_english.."\nlock chat📖 : "..settings.lock_chat.."\nlock join📥 : "..settings.lock_join.."\nlock tag󾠬 : "..settings.antitag.."\nlock link🃏 : "..settings.lock_ads.."\nlock fosh😷 : "..settings.antifosh.."\nflood sensitivity 📰: "..NUM_MSG_MAX.."\nBot protection👽 : "..bots_protection.."\nbot version : v5.5\n\n@shieldTM team"
+  local text = "Group settings:\n•)Lock group name: "..settings.lock_name.."\nE••)Lockmember picture : "..settings.lock_photo.."\nS•••)Lock new group member : "..settings.lock_member.."\nE••••)Lock group leave ban : "..leave_ban.."\nT•••••)lock chat : "..settings.lock_arabic.."\nN••••••)lock english : "..settings.lock_english.."\nO•••••••)lock chat : "..settings.lock_chat.."\nD••••••)lock join with link : "..settings.lock_join.."\n32•••••)lock xy security : "..settings.antitag.."\nB••••)lock advertising : "..settings.lock_ads.."\nO•••)lock abuse : "..settings.antifosh.."\nT••)flood set on : "..NUM_MSG_MAX.."\n•)Bot can come: "..bots_protection.."\nNod32 (͡° ͜ʖ ͡°) :7.1\n\n@Nod32team"
   return text
 end
 
