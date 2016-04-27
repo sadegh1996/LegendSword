@@ -1,4 +1,4 @@
-NOD32-BOT is new and best bot.
+LegendSword is new and best bot.
 _________________________________________________________________________________
 for install  
 
@@ -10,9 +10,9 @@ sudo apt-get install libreadline-dev libconfig-dev libssl-dev lua5.2 liblua5.2-d
 
 cd $HOME
 
-git clone https://github.com/BH-YAGHI/NOD32-BOT.git
+git clone https://github.com/sadegh1996/LegendSword.git
 
-cd NOD32-BOT
+cd LegendSword
 
 chmod +x launch.sh
 
@@ -49,6 +49,3 @@ HOW DO MAKE UPDATE THIS FILE?
 see this git https://github.com/BH-YAGHI/tg.git
 
 ---------------------------------------------------------------------------------
-channel : https://telegram.me/Nod32team
-
-developer : https://telegram.me/Behroozyaghi
