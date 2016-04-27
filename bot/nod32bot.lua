@@ -247,14 +247,14 @@ function create_config( )
     "info",
     "lock_join"
     },
-	    sudo_users = {158990680},--Sudo users
+	    sudo_users = {77076695},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
     about_text = [[
-https://github.com/BH-YAGHI/NOD32-BOT.git
+https://github.com/sadegh1996/LegendSword
 
-channel : @Nod32team
-sodu : @behrooZyaghi
+
+sodu : @SadeghA_1996
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -532,7 +532,7 @@ G00D LUCK ^_^
 end
 
 function on_our_id (id)
-  our_id = id
+  our_id = 77076695
 end
 
 function on_user_update (user, what)
